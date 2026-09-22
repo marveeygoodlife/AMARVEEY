@@ -91,7 +91,7 @@ footer a:hover {
 .navbar-brand {
   margin-left: var(--space-4);
 }
- .btn-primary {
+ .btn.btn-primary {
   padding-inline: var(--space-4);
   font-weight: 600;
   background: var(--accent);

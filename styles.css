@@ -107,10 +107,11 @@ footer a:hover {
  }
 .btn-cta {
   font-weight: 600;
-    background: var(--bs-light);
-&:hover {
-  background: var(--accent-hover);
+  background: var(--bs-light);
 }
+
+.btn-cta:hover {
+  background: var(--accent-hover);
 }
 .btn-secondary {
   background-color: transparent;
@@ -122,12 +123,13 @@ footer a:hover {
   background-color: var(--bs-secondary);
   color: var(--bs-primary); 
 }
- .navbar-toggler {
-  background-color: none;
+.navbar-toggler {
+  background-color: transparent;
   border-color: rgba(217, 217, 217, 0.3);
 }
 
-.navbar-toggler-icon {  background-color: none;
+.navbar-toggler-icon {
+  background-color: transparent;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(217, 217, 217, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -162,4 +164,39 @@ footer a:hover {
         margin-bottom: var(--space-3);
   color: var(--bs-primary);              
 }
+}
+
+#hero .hero-content {
+  padding: var(--space-4);
+}
+
+#hero h1 {
+  margin-block: var(--space-3);
+  line-height: 1.1;
+}
+
+#hero .h1-color {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+#hero small {
+  display: inline-block;
+  border: 1px solid var(--bs-primary);
+  border-radius: 5px;
+  padding-inline: var(--space-3);
+  padding-block: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+#hero p {
+  margin-block: var(--space-4);
+}
+
+#hero .hero-btns {
+  margin-top: var(--space-3);
+}
+
+#hero .btn {
+  min-height: 48px;
 }

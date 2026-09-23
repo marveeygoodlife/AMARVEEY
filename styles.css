@@ -197,21 +197,47 @@ footer a:hover {
 section {
   min-height: 90dvh;
 }
-.card {
-  background: rgb(var(--bs-secondary-rgb));
-  color: var(--bs-light);
-  transition: transform .3s ease-in-out;
 
-  h3 {
-    color: var(--bs-primary);
-  }
-  p, a {
-    font-size: 1rem;
-  }
+.card {
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(38, 50, 72, 0.12);
+    transition: all 0.3s ease;
+    overflow: hidden;
+        border-top: 3px solid var(--accent);
+
 }
+
 .card:hover {
-  transform: translateY(-10px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(38, 50, 72, 0.18);
 }
+
+.card-body {
+    padding: var(--space-3);
+}
+
+.card-title {
+    color: var(--bs-primary);
+    font-weight: 600;
+}
+
+.card .card-text {
+  font-size: 1rem;
+    color: var(--bs-secondary);
+}
+
+.card .card-link {
+    font-size: 1rem;
+  text-decoration: none;
+}
+
+.card .card-link:hover {
+  text-decoration: underline;
+}
+
+
 .header-div {
   display: flex;
   align-items: center;
@@ -225,4 +251,29 @@ section {
 
 #about {
   background: var(--bs-secondary);
+}
+.about-container {
+  padding: var(--space-4);
+}
+.accent {
+  color: var(--accent);
+}
+
+span.pill {
+  background: var(--accent);
+  border-radius: 50px;
+  border: none;
+  padding-inline: var(--space-4);
+  padding-block: var(--space-1);
+  display: flex;
+  max-width: fit-content;
+}
+.pill-link {
+  background: var(--bs-primary);
+  color: var(--bs-light);
+  border-radius: inherit;
+  padding-inline: var(--space-1);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
 }
